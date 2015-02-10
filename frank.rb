@@ -1,6 +1,6 @@
 class Greeter
 	def greet
-		"This is not the string you are looking for."
+		"This is not the greeting you are looking for."
 	end
 
 	def quote tag=nil
@@ -40,9 +40,6 @@ class Greeter
 			"Frank said many things. I can tell you some things he said about <b>love</b>, <b>life</b> or <b>alcohol</b>. What would you like to see?"
 		end
 
-	end
-
-	def photo
 	end
 
 end

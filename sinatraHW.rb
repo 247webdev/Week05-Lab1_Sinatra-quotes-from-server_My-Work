@@ -21,14 +21,11 @@ end
 
 # /photo route
 get '/photo' do
-	x = 1 + rand(5)
-	# "Photo #{x} was chosen."
-	send_file "./images/#{x}.jpeg"
+	send_file "./images/#{rand(5)}.jpeg"
 end
 
 # return quotes matching a tag
 get '/quote/:tag' do
-	# raise "Your tag must be either 'love', 'life' or, 'alcohol'." if (params[:tag] != 'love') and  (params[:tag] != 'life') and  (params[:tag] != 'alcohol')
 	@greeter.quote params[:tag].to_sym
 end
 
