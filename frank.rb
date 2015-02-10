@@ -35,7 +35,7 @@ class Greeter
 		#if tag is in the quote hash then do this
 		if quote[tag]
 			[ "<h2>Frank Sinatra said about #{tag}</h2>",
-			"#{quote[tag].sample}" ]
+			quote[tag].sample ]
 		else
 			"Frank said many things. I can tell you some things he said about <b>love</b>, <b>life</b> or <b>alcohol</b>. What would you like to see?"
 		end
